@@ -153,7 +153,43 @@ habitat(ardea_alba, ocean).
 habitat(egretta_thula, ocean).
 habitat(egretta_thula, marsh).
 
-nesting(ardea_herodias, tree).
+nesting(pelecanus_erythrorhynchos, Ground).
+nesting(pelecanus_occidentalis, Tree).
+nesting(botaurus_lentiginosus, Ground).
+nesting(ixobrychus_exilis, Ground).
+nesting(ardea_herodias, Tree).
+nesting(ardea_alba, Tree).
+nesting(egretta_thula, Tree).
+nesting(egretta_caerulea, Tree).
+nesting(egretta_tricolor, Tree).
+nesting(egretta_rufescens, Tree).
+nesting(bubulcus_ibis, Tree).
+nesting(butorides_virescens, Tree).
+nesting(nycticorax_nycticorax, Tree).
+nesting(nyctanassa_violacea, Tree).
+nesting(eudocimus_albus, Tree).
+nesting(plegadis_falcinellus, Ground).
+nesting(plegadis_chihi, Ground).
+nesting(platalea_ajaja, Tree).
+
+food(pelecanus_erythrorhynchos, Fish).
+food(pelecanus_occidentalis, Fish).
+food(botaurus_lentiginosus, Fish).
+food(ixobrychus_exilis, Fish).
+food(ardea_herodias, Fish).
+food(ardea_alba, Fish).
+food(egretta_thula, Fish).
+food(egretta_caerulea, Fish).
+food(egretta_tricolor, Fish).
+food(egretta_rufescens, Fish).
+food(bubulcus_ibis, Insects).
+food(butorides_virescens, Fish).
+food(nycticorax_nycticorax, Fish).
+food(nyctanassa_violacea,  Insects).
+food(eudocimus_albus, Insects).
+food(plegadis_falcinellus, Insects).
+food(plegadis_chihi, Insects).
+food(platalea_ajaja, Fish).
 
 conservation(egretta_rufescens, nt).
 conservation(X, lc) :- hasCompoundName(_,_,X).
