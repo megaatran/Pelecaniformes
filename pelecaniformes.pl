@@ -9,9 +9,9 @@ genus(botaurus).
 genus(ixobrychus).
 genus(ardea).
 genus(egretta).
-genus(bubulus).
+genus(bubulcus).
 genus(butorides).
-genus(nycricorax).
+genus(nycticorax).
 genus(nyctanassa).
 genus(eudocimus).
 genus(plegadis).
