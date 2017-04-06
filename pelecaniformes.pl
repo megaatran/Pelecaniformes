@@ -74,24 +74,7 @@ hasParent2(nycticorax, ardeidae).
 hasParent2(X,Y) :- hasParent(X,Y) *-> \+ species(X).
 hasParent2(X,Y) :- hasCompoundName(Y,_,X).
 
-hasCompoundName(pelecanus, erythrorhynchos,pelecanus_erythrorhynchos).
-hasCompoundName(pelecanus, occidentalus, pelecanus_occidentalis).
-hasCompoundName(botaurus, lentiginosus, botaurus_lentiginosus).
-hasCompoundName(ixobrixus, exilis, ixobrychus_exilis).
-hasCompoundName(ardea, herodias, ardea_herodias).
-hasCompoundName(ardea, alba,ardea_alba).
-hasCompoundName(egretta, thula, egretta_thula).
-hasCompoundName(egretta, caerula, egretta_caerula).
-hasCompoundName(egretta, tricolor, egretta_tricolor).
-hasCompoundName(egretta, rufuscens, egretta_rufescens).
-hasCompoundName(bubulcus, ibis, bubulcus_ibis).
-hasCompoundName(butorides, virescens, butorides_virescens).
-hasCompoundName(nycticorax, nycticorax, nycticorax_nycticorax).
-hasCompoundName(nyctanassa, violacea, nyctanssa_violacea).
-hasCompoundName(eudocimus, albus, eudocimus_albus).
-hasCompoundName(plegadis, falcinellus, plegadis_falcinellus).
-hasCompoundName(plegadis, chihi, plegadis_chihi).
-hasCompoundName(platalea, ajaja, platalea_ajaja).
+hasCompoundName(G,S,C) :- genus(G), species(S), hasParent(S,G), atom_concat(G, '_', X), atom_concat(X,S,C).
 
 hasCommonName(pelecanus, pelican).
 hasCommonName(pelecanus_erythrorhynchos, americanWhitePelican).
